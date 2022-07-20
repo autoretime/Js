@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather-For-U</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+  <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+  <div class="wrapper p-15">
+    <div class="header">
+      <div class="h1">
+        MY WEATHER
+      </div>
+        <form action="" class="search search-form">
+          <input type="text" class="search-bar" placeholder="Search">
+          <button>
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.5em"
+              width="1.5em" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z">
+              </path>
+            </svg>
+          </button>
+        </form>
+
+    </div>
+
+    <div class="sidenav">
+      <a href="#" class="active" id="first" data-td>Today</a>
+      <a href="#" id="second" data-five-days>5-day forecast</a>
+    </div>
+
+
+
+    <div class="first-page">
+      <div class="card">
+        <div class="weather ">
+          <div class="time">
+            <div>
+              <h2 class="city"></h2>
+            </div>
+            <div class="date-time">
+
+            </div>
+          </div>
+
+          <div class="w-info">
+            <div class="flex">
+              <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon" />
+              <div class="description">Climate</div>
+            </div>
+            <div>
+              <h1 class="temp">Temp</h1>
+              <p class="real-feel"></p>
+            </div>
+            <div class="info">
+              <p class="sunrise"></p>
+              <p class="sunset"></p>
+              <p class="duration"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="card">
+        <div>
+          <h2 class="hourly"> HOURLY</h2>
+        </div>
+
+        <div class="second-wrapper">
+          <div class="block d-f">
+            <div class="p-20">
+              <h3>Today</h3>
+            </div>
+
+            <div>
+              <h5>Forecast</h5>
+              <h5>Temp(°C)</h5>
+              <h5>Real Feel</h5>
+              <h5>Wind(km/h)</h5>
+            </div>
+          </div>
+
+          <div class="daily-weather" id="daily-weather">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="second-page">
+
+      <div class="cards" id="cards">
+        <div class="cart" data-cart>      
+          <div class="block d-f">            
+            <div class="">
+              <h3>  </h3>
+            </div> 
+            <div>      
+              <h5></h5>
+            </div>
+            <div>
+            <img  alt="" class="icon" />
+            </div>  
+            <div>
+              <h5></h5>
+            </div>                    
+            <div>
+              <p></p>
+            </div>                         
+          </div>  
+        </div>For-hourly
+        
+      </div>
+
+      <div class="For-hourly" id="For-hourly">
+        <div class="card">
+          <div>
+            <h2 class="hourly"> HOURLY</h2>
+          </div>
+  
+          <div class="second-wrapper">
+            <div class="block d-f">
+              <div class="p-20" id="block-two">
+               
+              </div>
+  
+              <div>
+                <h5>Forecast</h5>
+                <h5>Temp(°C)</h5>
+                <h5>Real Feel</h5>
+                <h5>Wind(km/h)</h5>
+              </div>
+            </div>
+  
+            <div class="hourly-weather" id="hourly-weather">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+    integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./js/index.js" defer></script>
+</body>
+
+</html>

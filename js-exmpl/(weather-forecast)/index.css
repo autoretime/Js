@@ -1,0 +1,202 @@
+body{
+  margin: 0;
+  background-image: url('https://funart.pro/uploads/posts/2021-04/1617501377_47-p-oboi-dnevnoe-nebo-54.jpg');
+    font-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.p-15{
+  padding: 0 15%;
+}
+
+.p-20{
+  padding-bottom: 47px ;
+}
+
+.h1 {
+  font-size: 40px;
+  color: aquamarine;
+  font-weight: bold;
+}
+.real-feel{
+ font-size: small;
+ text-align:center;
+}
+
+.second-wrapper{
+  display: grid;
+  grid-template-columns:  150px 1fr;
+}
+
+.p{
+  margin-top: 30px;
+}
+
+.d-f{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 20px;
+    height:100%;
+  } 
+  
+  .card {
+    background:rgba(12, 11, 11, 0.55);
+    color: rgb(238, 229, 229);
+    padding: 2em;
+    border-radius: 20px;
+    margin: 1em;
+  }
+  
+  .flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#fff;
+  }
+  
+  input::-webkit-input-placeholder { color: #fff; }
+
+  button {
+    margin: 0.5em;
+    border-radius: 20%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background:rgba(12, 11, 11, 0.55);    
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+
+  input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background:rgba(12, 11, 11, 0.55);
+    color: white;
+    font-family: inherit;
+    font-size: 105%;
+    width: calc(100% - 100px);
+  }
+  
+  button:hover {
+    background: #7c7c7c2b;
+  }
+  
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+  }
+  
+  .hourly{
+    color: aquamarine;
+  }
+
+  .time {
+    display: flex;
+    justify-content: space-between;
+    color: aquamarine;
+    align-items: center;
+  }
+  
+  .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+  
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .w-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hourly-weather{
+    display: flex;
+    justify-content: space-around;
+    align-items:center
+  }
+
+  .daily-weather{
+    display: flex;
+    justify-content: space-around;
+    align-items:center
+  }
+
+  .block{
+    color:#9BA5C0;
+  }
+
+  .sidenav{
+    background:rgba(12, 11, 11, 0.55);
+    justify-content: center;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 1em;
+    display: flex;    
+    font-size: 20px;
+  }
+
+  .sidenav a{
+    text-decoration:none;
+    color: rgb(238, 229, 229);
+    padding: 10px;
+    
+  }
+
+  .second-page{
+    display: none; 
+    height: 100%;
+  }
+
+  .For-hourly{
+    display: none;
+  }
+  #block-two{
+    color: aquamarine!important;
+  }
+
+  .active{
+    color: aquamarine!important;
+  }
+
+  .cards{
+    display: flex;
+    justify-content: center;
+  }
+
+  .cart {
+    text-align: center;
+    background:rgba(12, 11, 11, 0.55);
+    color: rgb(238, 229, 229);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 15px;
+    width: 125px;
+  }
+
+  .cart h5{
+    margin: 0;
+  }

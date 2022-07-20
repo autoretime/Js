@@ -1,0 +1,45 @@
+.d-f {
+    display: flex;
+}
+
+.f-d-c {
+    flex-direction: column;
+}
+
+.a-i-c {
+    align-items: center;
+}
+
+.j-c-s-b {
+    justify-content: space-between;
+}
+
+.j-c-s-a {
+    justify-content: space-around;
+}
+
+.j-c-c {
+    justify-content: center;
+}
+
+.d-g {
+    display: grid;
+}
+
+.p-5 {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.p-15 {
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.p-t{
+    padding-top: 10px;
+}
+
+.p-b{
+    padding-bottom: 10px;
+}

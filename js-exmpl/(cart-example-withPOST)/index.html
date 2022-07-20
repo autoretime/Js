@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shared.css">
+   
+</head>
+<body>
+
+    <div class="wrapper d-f f-d-c j-c-c p-15">
+        <h1>Modern Shoping Cart Example</h1>
+
+            <div class="carts d-g" >
+                <div class="cart d-f f-d-c" data-id="#1">
+                    <div class="back-gray">
+                        <h3 class="item-title">Nike Air</h3>
+                    </div >
+                    <div class="show d-f f-d-c">
+                        <div class="price d-f a-i-c j-c-c">100<p>$</p></div>
+                        <button data-cart type="btn">ADD TO CART</button>
+                    </div>                                     
+
+                </div>
+                <div class="cart d-f f-d-c " data-id="#2">
+                    <div class="back-gray">
+                        <h3 class="item-title">Adidas Superstar</h3>
+                    </div>
+                    <div class="show d-f f-d-c">
+                       <div class="price d-f a-i-c j-c-c">120<p>$</p></div> 
+                       <button data-cart type="btn">ADD TO CART</button>
+                    </div>
+
+                </div>
+                <div class="cart d-f f-d-c  " data-id="#3">
+                    <div class="back-gray">
+                        <h3 class="item-title">Puma St Runner</h3>
+                    </div>
+                    <div class="show d-f f-d-c">
+                       <div class="price d-f a-i-c j-c-c">130<p>$</p></div> 
+                       <button data-cart type="btn"> ADD TO CART</button>
+                    </div>
+
+                </div>
+                <div class="cart d-f f-d-c  " data-id="#4">
+                    <div class="back-gray">
+                        <h3 class="item-title">New Balance Edition</h3>
+                    </div>
+                    <div class="show d-f f-d-c">
+                        <div class="price d-f a-i-c j-c-c">150<p>$</p> </div>
+                        <button data-cart type="btn">ADD TO CART</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="trash ">
+                <div class="cart-zone">
+                    <h2>CART:</h2>
+                </div>
+                <div data-cart-empty class="cart-empty">
+                        CART EMPTY
+                </div>
+            </div> 
+
+            <div class="cart-zone-footer d-f">
+                <div class="position d-f">
+                    <h3 class="d-f a-i-c">Total: <p class="tottal-price"> 0 <p>$</p> </p></h3>
+                    <button data-button class="myBtn" id="addCart" disabled>Checkout</button>
+                </div>           
+            </div>
+            
+
+   
+        <div id="myModal" class="modal">
+
+            <div class="modal-content" >      
+                <form>
+                    <div class="mySlides-first">
+                        <span class="close" data-span>&times;</span>
+                        <div class="form d-f f-d-c" >
+                            <h1>Checkout:</h1>
+                            <br>
+                            <h4>Name:</h4>
+                            <input type="text" name="firstname" placeholder="First Name..." required>                
+                            <br>
+                            <input type="text" name="lastname" placeholder="Last Name..." required> 
+                            <div>
+                                <button type="button" data-next-one class="next ">Next</button>
+                            </div>                          
+                        </div>                     
+                    </div>
+
+                    <div class="mySlides-second">
+                        <span class="close" data-span>&times;</span>
+                        <div class="form d-f f-d-c">
+                            <h1>Checkout:</h1>
+                            <br>
+                            <h4>Contact Info:</h4>
+                            <input type="email" name="email" placeholder="Email..." required>                
+                            <br>
+                            <input type="phone" name="phone" placeholder="Phone..." required> 
+                            <div>
+                                <button type="button" data-prev-one class="prev ">Prev</button>
+                                <button type="button" data-next-two class="next ">Next</button>
+                            </div>                          
+                        </div> 
+                    </div>
+
+                    <div class="mySlides-third">
+                        <span class="close" data-span>&times;</span>
+                        <div class="form d-f f-d-c" required >
+                            <h1>Checkout:</h1>
+                            <br>
+                            <h4>Payment:</h4>
+                            <div class="d-f a-i-c"><input type='radio' name='payment' value='c' />
+                                Cash
+                            </div>                        
+
+                            <div class="d-f a-i-c"><input type='radio' name='payment ' value='n-c'  />
+                                Non-Cash 
+                            </div>
+
+                            <div  class="d-f j-c-s-b">
+                                <button  type="button" data-prev-two class="prev ">Prev</button>
+                                <button type="submit" value="Submit" class="Submit  ">Submit</button>
+                            </div>                          
+                        </div>
+                    </div>   
+                </form>         
+            </div>
+           
+        </div>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
